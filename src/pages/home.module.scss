@@ -1,1 +1,41 @@
-// TODO
+.post {
+  display: block;
+
+  & + .post {
+    margin-top: 48px;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--heading);
+    transition: color 0.2s;
+  }
+
+  p {
+    font-size: 1rem;
+    color: var(--body);
+    margin: 0 0 1.25em;
+  }
+
+  &:hover {
+    h3 {
+      color: var(--highlight);
+    }
+  }
+}
+
+.more {
+  color: var(--highlight);
+  font-weight: bold;
+  border: 0;
+  background: transparent;
+  transition: filter 0.2s;
+  font-size: 1.25rem;
+  margin: 2rem 0;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}

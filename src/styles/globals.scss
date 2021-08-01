@@ -4,4 +4,39 @@
   padding: 0;
 }
 
-// TODO
+:root {
+  --background: #1a1d23;
+  --heading: #f8f8f8;
+  --highlight: #ff57b2;
+  --info: #bbbbbb;
+  --body: #d7d7d7;
+}
+
+body {
+  background: var(--background);
+  color: var(--body);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--highlight);
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+hr {
+  max-width: 720px;
+  margin: auto;
+  border: 0;
+  border-bottom: 1px solid var(--info);
+  opacity: 0.3;
+}
